@@ -13,7 +13,6 @@ const aniosError = document.querySelector("#aniosError");
 const button = document.querySelector("#boton");
 
 function calculateResults(e) {
-    console.log(`calculando...`);
     const principio = parseFloat(montoIngresado.value);
     const calcularInteres = parseFloat(interesIngresado.value) / 100 / 12;
     const calcularPagos = parseFloat(aniosIngresados.value) * 12;
@@ -33,7 +32,6 @@ function calculateResults(e) {
  const pagoTotal = (mensual * calcularPagos).toFixed(0);
  document.getElementById("parrafoUno").textContent = "¡Su crédito  fue aceptado, gracias por confiar! Usted pagará un total de $" + pagoTotal
     
-console.log (pagoMensual, pagoTotal);
 
 e.preventDefault();
 
