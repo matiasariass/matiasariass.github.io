@@ -26,19 +26,19 @@
         <div class="form-container"> 
         <form id= "form-ch" action="">
           
-          <input id="nombreInput" type="text" placeholder="Nombre">
+          <input id="nombreInput" name="nombre" type="text" placeholder="Nombre">
           <div id="nombreError" class="error-container"></div>
 
-          <input id="interesInput" min="1" type="number" step="any" placeholder="interés">
+          <input id="interesInput" name="interes" min="1" type="number" max=3 step="any" placeholder="interés">
           <div id="interesError" class="error-container"></div>
 
-          <input id="montoInput" type="number" placeholder="Monto del crédito">
+          <input id="montoInput" name="monto" type="number" placeholder="Monto del crédito">
           <div id="montoError" class="error-container"></div>
 
-          <input id="aniosInput" min="1" max="60" type="number" placeholder="Años a pagar">
+          <input id="aniosInput" name="años" min="1" max="60" type="number" placeholder="Años a pagar">
           <div id="aniosError" class="error-container"></div>
 
-          <input id="boton" type="submit" onclick="abrirPopup()" value="CONFIRMAR">
+          <input id="boton"  type="submit" onclick="abrirPopup()" value="CONFIRMAR">
 
           <div class="popUp" id="popup">
             <img src="tick.png">
