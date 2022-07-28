@@ -1,6 +1,7 @@
 document.getElementById(`form-ch`).addEventListener(`submit`, calculateResults);
 
 const nameIngresado = document.querySelector("#nombreInput");
+const mailIngresado = document.querySelector("#mailInput");
 const interesIngresado = document.querySelector("#interesInput");
 const montoIngresado = document.querySelector("#montoInput");
 const aniosIngresados = document.querySelector("#aniosInput");
@@ -48,6 +49,7 @@ getForm.addEventListener("submit", (e) => {
 
 button.addEventListener('click',(event)=>{
     validateEmpty(nameIngresado.value, nameIngresado, nameError, "Nombre");
+    validateEmpty(mailIngresado.value, mailIngresado, mailError, "Correo electrónico" )
     validateEmpty(interesIngresado.value, interesIngresado, interesError, "Interès");
     validateEmpty(montoIngresado.value, montoIngresado, montoError, "Monto");
     validateEmpty(aniosIngresados.value, aniosIngresados, aniosError, "Años");
@@ -68,11 +70,13 @@ function validateEmpty(valueInput, divInput, divError, nameInput){
 const arr = [];
 function saveInStorage(){
     let findName = arr.findIndex(x => x.name == nameIngresado.value);
+    let findMail = arr.findIndex(x => x.name == mailIngresado.value)
     let findInt = arr.findIndex(x => x.int == interesIngresado.value);
     let findAmount = arr.findIndex(x => x.amount == montoIngresado.value);
     let findInstallments = arr.findIndex(x => x.Installments == aniosIngresados.value);
     if((findName && findInt && findAmount && findInstallments) == -1){
         arr.push({name : nameIngresado.value});
+        arr.push({name : mailIngresado.value});
         arr.push({int: interesIngresado.value});
         arr.push({amount : montoIngresado.value});
         arr.push({Installments: aniosIngresados.value});
@@ -99,7 +103,7 @@ function hideError(divInput, divError){
 let popup = document.getElementById ("popup");
 
 function abrirPopup(){  
-    if(nameIngresado.value && interesIngresado.value && montoIngresado.value && aniosIngresados.value){
+    if(nameIngresado.value && interesIngresado.value && montoIngresado.value && aniosIngresados.value && mailIngresado.value){
         popup.classList.add("open-popup");  
         }else{          
         }
