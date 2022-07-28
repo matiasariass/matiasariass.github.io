@@ -65,7 +65,7 @@ function validateEmpty(valueInput, divInput, divError, nameInput){
    }
 }
 
-/*Guado todo en un array para luego guardar este array en el storage*/
+// Guardo todo en un array para luego guardar este array en el storage / tengo que buscarle un uso.
 
 const arr = [];
 function saveInStorage(){
@@ -137,3 +137,24 @@ toastr.options = {
   
 }
 });
+
+
+const form = document.getElementById('form-ch')
+
+async function sendEMail(event){
+event.preventDefault()
+
+const fd = new FormData(this)
+const response = await fetch('https://formspree.io/f/mqknvbya', {
+method: 'POST',
+body: fd,
+headers: {
+    Accept: 'application/json'
+}
+})
+if (response.ok){ 
+this.reset()
+} else{ 
+}
+}
+form.addEventListener('submit', sendEMail)
