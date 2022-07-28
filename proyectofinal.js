@@ -1,3 +1,6 @@
+var foundUser = JSON.parse(localStorage.getItem("user"));
+console.log (foundUser)
+
 document.getElementById(`form-ch`).addEventListener(`submit`, calculateResults);
 
 const nameIngresado = document.querySelector("#nombreInput");
@@ -65,7 +68,7 @@ function validateEmpty(valueInput, divInput, divError, nameInput){
    }
 }
 
-// Guardo todo en un array para luego guardar este array en el storage / tengo que buscarle un uso.
+// STORAGE - LINEA 120
 
 const arr = [];
 function saveInStorage(){
@@ -74,9 +77,9 @@ function saveInStorage(){
     let findInt = arr.findIndex(x => x.int == interesIngresado.value);
     let findAmount = arr.findIndex(x => x.amount == montoIngresado.value);
     let findInstallments = arr.findIndex(x => x.Installments == aniosIngresados.value);
-    if((findName && findInt && findAmount && findInstallments) == -1){
+    if((findName && findInt && findAmount && findInstallments && findMail) == -1){
         arr.push({name : nameIngresado.value});
-        arr.push({name : mailIngresado.value});
+        arr.push({mail : mailIngresado.value});
         arr.push({int: interesIngresado.value});
         arr.push({amount : montoIngresado.value});
         arr.push({Installments: aniosIngresados.value});
@@ -114,11 +117,17 @@ function cerrarPopup(){
 }
 
 // LIBRERIA
+let mensaje;
+if (foundUser){
+    mensaje = `¡Bienvenido devuelta ${foundUser[0].name}!`
+}else{ 
+    mensaje = ("Por el momento solo peso argentino.")
+}
 
 $(document).ready(function(){
 $('#btn1').click(function(){
 })
-toastr["info"]("Por el momento solo peso argentino.")
+toastr["info"](mensaje)
 
 toastr.options = {
   "closeButton": true,
