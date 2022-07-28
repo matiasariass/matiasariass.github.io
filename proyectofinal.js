@@ -141,6 +141,8 @@ toastr.options = {
 });
 
 
+// ENVIA MAIL AL COMPLETAR EL FORMULARIO CON LOS DATOS INGRESADOS.
+
 const form = document.getElementById('form-ch')
 
 async function sendEMail(event){
