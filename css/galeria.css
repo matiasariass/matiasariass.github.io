@@ -7,6 +7,9 @@
     padding: 0;
 }
 
+.logo{ 
+    height: 50px;
+}
 
 html{
     font-size: 62.5%;
