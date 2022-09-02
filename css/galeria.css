@@ -7,9 +7,6 @@
     padding: 0;
 }
 
-.logo{ 
-    height: 50px;
-}
 
 html{
     font-size: 62.5%;
@@ -218,4 +215,12 @@ ul.slider li:target{
     width: 6px;
     height: 6px;
     border-radius: 100%;
+}
+
+.logo{ 
+    height: 50px;
+}
+
+.nov{
+color: black;
 }
