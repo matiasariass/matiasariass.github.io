@@ -7,9 +7,6 @@
     padding: 0;
 }
 
-.logo{ 
-    height: 50px;
-}
 
 html{
     font-size: 62.5%;
@@ -334,4 +331,12 @@ tr td{
     padding-top: 20px;
     color: black;
     font-size: 15px;
+}
+
+.logo{ 
+    height: 50px;
+}
+
+.nov{
+color: black;
 }
