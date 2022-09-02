@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+nav {
+    width: auto;
+    background-color: #EFEFEF;
+    padding: 4px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 4px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #EFEFEF;
+}
+
+h1,h2,h3{
+    color: black;
+    
+    font-family: 'Raleway', sans-serif;
+}
+
+p { 
+    color: black;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    font-size: 1.8rem;
+    text-decoration: none;
+background-color: EFEFEF;
+}
+
+nav ul li a:hover{
+    color: #f79d00;
+    font-weight: 600;
+}
+
+.textDestacado{
+    background-color: blue;
+}
+
+.textBold{
+    font-weight: 600;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.bgLight{ 
+    background-color: #EFEFEF;
+}
+
+.bgDark{
+    background-color: #EFEFEF;
+}
+
+.anuncio__box--white{
+    font-size: 0.4rem;;
+    text-align: center;
+    background-color: grey;
+    border: solid black 1px;
+    
+    font-family: 'Raleway', sans-serif;
+    padding: 6px 0;
+}
+
+.encabezado__img--fluid{
+    color: white;
+    width: 100%;
+    
+}
+
+.novedades__titulo--xxl{
+    font-size: 4rem;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+.novedades__titulo--xl{
+    font-size: 4rem;
+   
+    font-family: 'Lato', sans-serif;
+}
+
+.novedades__articulo{
+    width: 40%;
+    height: 210px;
+    margin: 70px auto;
+    padding: 30px 70px;
+
+    overflow: auto;
+    display: inline-block;
+}
+
+.pie{
+    text-align: center;
+    padding: 6px 0;
+    background-color: white;
+}
+
+.pie__icon--sm{
+    size: 4px;
+    width: 35px;
+    margin-right: 4px;
+  
+}
+
+.novedades__titulo--md{
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.sli{
+    margin: auto;
+    background-color: #EFEFEF;
+    width: 100%;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: inherit;
+   background-color: #EFEFEF;
+    transition: opacity .5s;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 304px;
+object-fit: cover;
+
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 0px;
+    position: absolute;
+    right: 48%;
+    top: 35%; 
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: block;
+    background-color: #f79d00;
+    padding: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+}
+
+.contact{
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-box{
+    background: white;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-izq{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    font-family: 'Lato', sans-serif;
+    border-top: solid orange;
+    border-left: solid orange;
+    border-bottom: solid orange;
+}
+
+.contact-der{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #EFEFEF;
+    color: white;
+    font-family: 'Lato', sans-serif;
+   border-top: solid orange;
+   border-right: solid orange;
+   border-bottom: solid orange;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-grupo{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+border: none;
+border-bottom: 1px solid #ccc;
+outline: none;
+padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+button{
+    background: orange;
+    width: 100px;
+    border: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px black;
+}
+
+.contact-izq h3{
+    font-size: 18px;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-der h3{
+    font-size: 17px;
+    color: orange;
+    text-shadow: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+    color: black;
+    font-size: 15px;
+}
+
+.logo{ 
+    height: 50px;
+}
+
+.nov{
+color: black;
+}
