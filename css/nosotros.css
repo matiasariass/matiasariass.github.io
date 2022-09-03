@@ -5,8 +5,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 html{
     font-size: 62.5%;
@@ -29,6 +29,7 @@ nav {
 
 body{
     background-color: #EFEFEF;
+
 }
 
 h1,h2,h3{
@@ -224,4 +225,67 @@ ul.slider li:target{
 
 .nov{
 color: black;
+}
+
+.container{
+    width: 400%;
+    max-width: 3100px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.card{
+    width: 10%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+cursor: default;
+transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: black;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    border: 1px solid #f79d00;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}   
+
+.card .contenido a:hover{
+    background: #f79d00;
+    color: #fff
 }
