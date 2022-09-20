@@ -70,6 +70,10 @@ margin-bottom: 20px;
     justify-content: center;
 }
 
+h3{
+    color: white;
+}
+
 .boton{
     width: 150px;
     display: block;
