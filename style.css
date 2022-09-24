@@ -1,0 +1,251 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+margin: auto;
+overflow: hidden;
+padding: 60px 0;
+}
+
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    height: 45px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    text-decoration: none;
+    color: #000000;
+    padding-left: 10px;
+}
+
+.hero{
+    height: 500px;
+    background-image: url(./img/alfa.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+text-align: center;
+color: #ffffff;
+}
+
+.hero h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p{
+font-size: 20px;
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    color: white;
+}
+
+.boton{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: #8c2574;
+    color: white;
+    text-decoration: none;
+     border-radius: 20px;
+      
+}
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+
+.copy{
+    text-align: center;
+    color: #777777;
+    margin: 20px 0;
+}
+
+.beneficios{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.beneficio{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(./img/alfa.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.beneficio2{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(./img/alfa2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.beneficio3{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(./img/alfa3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.beneficio4{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(./img/alfa4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: #f2f2f2;
+}
+
+footer .footer-seccion{
+    text-align: center;
+    font-size: 25px;
+    color: black; 
+}
+footer .copyR{
+    color: black;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales i{
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.copyR{
+    font-size: 10;
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+}
+
+.proyects{
+    background-color: #f2f2f2;
+
+}
+.contenedor-imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagenes img{
+display: block;
+width: 30%;
+box-shadow: 0 0 8px rgba(0,0,0,0.4);
+margin-bottom: 40px;
+}
+
+@media screen and (max-width:768px){
+    .menu-navegacion{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+        font-size: 14px;
+    }
+    .hero h1{
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .hero p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .boton{
+        margin-bottom: 50px;
+    }
+    .beneficio{
+        margin-bottom: 20px;
+    }
+    .beneficio2{
+        margin-bottom: 20px;
+    }
+    .beneficio3{
+        margin-bottom: 20px;
+    }
+    .beneficio4{
+        margin-bottom: 20px;
+    }
+    .contenedor-imagenes img{
+        width: 90%;
+    }
+
+    .copy{
+        margin-bottom: 40px;
+    }
+
+}
