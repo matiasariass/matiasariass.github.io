@@ -162,12 +162,13 @@ footer{
 }
 
 footer .footer-seccion{
+    
     text-align: center;
     font-size: 25px;
     color: black; 
+    margin-top: 50px;
     padding-top: 7px;
-    }
-    
+}
 footer .copyR{
     color: black;
 }
