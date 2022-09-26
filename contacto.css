@@ -244,15 +244,17 @@ span{
 
 footer{
     background-color: #f2f2f2;
+
 }
 
 footer .footer-seccion{
+    
     text-align: center;
     font-size: 25px;
     color: black; 
+    margin-top: 50px;
     padding-top: 7px;
-    }
-
+}
 footer .copyR{
     color: black;
 }
