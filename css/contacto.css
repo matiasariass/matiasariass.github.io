@@ -1,0 +1,366 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+margin: auto;
+overflow: hidden;
+padding: 60px 0;
+}
+
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    height: 45px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    text-decoration: none;
+    color: #000000;
+    padding-left: 10px;
+}
+
+.hero{
+    height: 500px;
+    background-image: url(/img/alfa.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+text-align: center;
+color: #ffffff;
+}
+
+.hero h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p{
+font-size: 20px;
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    color: white;
+}
+
+.boton{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: #8c2574;
+    color: white;
+    text-decoration: none;
+     border-radius: 20px;
+      
+}
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+
+.copy{
+    text-align: center;
+    color: #777777;
+    margin: 20px 0;
+}
+
+.beneficios{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.beneficio{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(/img/alfa.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.beneficio2{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(/img/alfa2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.beneficio3{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(/img/alfa3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.beneficio4{
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(/img/alfa4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.form{
+    top: 20px;
+    width: 940px;
+    height: 440px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: auto;
+    padding: 20px 30px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: relative;
+}
+
+h2{
+margin: 10px 0;
+padding-bottom: 10px;
+width: 180px;
+color: black;
+border-bottom: 3px solid black;
+}
+
+input{
+    width: 100%;
+    padding: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: sans-serif;
+    transform: all .3s;
+    border-bottom: 2px solid grey;
+}
+
+input:focus{
+    border-bottom: 2px solid lightblue;
+}
+
+p:before{
+    content: attr(type);
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: black;
+}
+
+button{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: sans-serif;
+    border: 2px solid gray;
+    background: 0;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover{
+    background: black;
+    color: white;
+}
+
+.dii{
+    position: absolute;
+    bottom: -1px;
+    right: -21px;
+    background: black;
+    color: white;
+    width: 320px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px #000;
+}
+
+.fa fa-phone .fa fa-envelope-o{
+    margin: 0 5px 0 15px;
+}
+
+
+
+
+span{
+    margin: 0 5px 0 15px;
+}
+
+
+footer{
+    background-color: #f2f2f2;
+
+}
+
+footer .footer-seccion{
+    
+    text-align: center;
+    font-size: 25px;
+    color: black; 
+    margin-top: 50px;
+    padding-top: 7px;
+}
+footer .copyR{
+    color: black;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales i{
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.copyR{
+    font-size: 10;
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+}
+
+.proyects{
+    background-color: #f2f2f2;
+
+}
+.contenedor-imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagenes img{
+display: block;
+width: 30%;
+box-shadow: 0 0 8px rgba(0,0,0,0.4);
+margin-bottom: 40px;
+}
+
+@media screen and (max-width:768px){
+    .menu-navegacion{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+        font-size: 14px;
+    }
+
+    .form{
+        width: 746px;
+        margin: 2px;
+}
+
+.dii{
+    width: 746px;
+        margin: 19px;
+}
+
+    .hero h1{
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .hero p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .boton{
+        margin-bottom: 50px;
+    }
+    .beneficio{
+        margin-bottom: 20px;
+    }
+    .beneficio2{
+        margin-bottom: 20px;
+    }
+    .beneficio3{
+        margin-bottom: 20px;
+    }
+    .beneficio4{
+        margin-bottom: 20px;
+    }
+    .contenedor-imagenes img{
+        width: 90%;
+    }
+
+    .copy{
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width:468px){
+    .form{
+        width: 356px;
+        margin: 12px;
+}
+
+.dii{
+    width: 346px;
+        margin: 26px;
+}
+}
