@@ -1,0 +1,426 @@
+@import "//scss/main.scss";
+@import "//scss/main.scss";
+.form {
+  top: 20px;
+  width: 940px;
+  height: 440px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: auto;
+  padding: 20px 30px;
+  max-width: 61rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: relative;
+}
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: black;
+  border-bottom: 3px solid black;
+}
+.form input {
+  width: 100%;
+  padding: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: sans-serif;
+  transform: all 0.3s;
+  border-bottom: 2px solid grey;
+}
+.form input:focus {
+  border-bottom: 2px solid lightblue;
+}
+.form p:before {
+  content: attr(type);
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: black;
+}
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: sans-serif;
+  border: 2px solid gray;
+  background: 0;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form button:hover {
+  background: black;
+  color: white;
+}
+.form .dii {
+  position: absolute;
+  bottom: -1px;
+  right: -21px;
+  background: black;
+  color: white;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+.form .fa fa-phone .fa fa-envelope-o {
+  margin: 0 5px 0 15px;
+}
+.form span {
+  margin: 0 5px 0 15px;
+}
+
+.containerD {
+  padding: 150px 0;
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 40px;
+}
+.containerD .card__desc-img-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+}
+.containerD .card__desc-img {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+.containerD .cardD {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  border: 5px solid #17c501;
+}
+.containerD .cardD .card_title {
+  text-align: center;
+  padding: 20px 0;
+}
+.containerD .cardD .card__price-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerD .cardD .card__price-body .card__price-title {
+  height: 110px;
+  width: 110px;
+  color: #fff;
+  background: linear-gradient(45deg #039024, #00ff4e);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.containerD .cardD .card__price-body .card__price-title .card_price-currency {
+  position: relative;
+  top: -10px;
+  font-size: 15px;
+}
+.containerD .cardD .card__price-body .card__price-title .card__price-value {
+  font-size: 45px;
+}
+.containerD .cardD .card__button-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerD .cardD .card__button {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #17c501;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  transition: background-color 0.4s linear;
+}
+.containerD .cardD .card__button:hover {
+  background-color: #1ce503;
+}
+.containerD .cardD:nth-child(2) {
+  transform: scale(1.1);
+  border: 5px solid #e3cf0b;
+}
+.containerD .cardD:nth-child(2) .card__button {
+  background-color: #e3cf0b;
+}
+.containerD .cardD:nth-child(2) .card__button:hover {
+  background-color: #f3de11;
+}
+.containerD .cardD:nth-child(2) .card__prince-title {
+  background: linear-gradient(45deg, #c58600, #fbff00);
+}
+.containerD .cardD:nth-child(3) {
+  border: 5px solid #b40be3;
+}
+.containerD .cardD:nth-child(3) .card__button {
+  background-color: #b40be3;
+}
+.containerD .cardD:nth-child(3) .card__button:hover {
+  background-color: #d211f3;
+}
+.containerD .cardD:nth-child(3) .card__prince-title {
+  background: linear-gradient(45deg, #510088, #ff008d);
+}
+
+.card__desc-body {
+  padding: 20px 0;
+}
+
+.card_desc {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.hero {
+  height: 500px;
+  background-image: url(/img/alfa.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: #ffffff;
+}
+.hero .contenedor-textos {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.hero .boton {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  background: #8c2574;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+h3 {
+  color: white;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 60px 0;
+}
+.contenedor .titulo-seccion {
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+.contenedor .copy {
+  text-align: center;
+  color: #777777;
+  margin: 20px 0;
+}
+.contenedor .beneficios {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contenedor .beneficio {
+  font-size: 20px;
+  width: 10em;
+  height: 10em;
+  background-image: url(/img/alfa.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.contenedor .beneficio2 {
+  font-size: 20px;
+  width: 10em;
+  height: 10em;
+  background-image: url(/img/alfa2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.contenedor .beneficio3 {
+  font-size: 20px;
+  width: 10em;
+  height: 10em;
+  background-image: url(/img/alfa3.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.contenedor .beneficio4 {
+  font-size: 20px;
+  width: 10em;
+  height: 10em;
+  background-image: url(/img/alfa4.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.proyects {
+  background-color: #f2f2f2;
+}
+.proyects .titulo-seccion {
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+.proyects .copy {
+  text-align: center;
+  color: #777777;
+  margin: 20px 0;
+}
+.proyects .contenedor-imagenes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.proyects img {
+  display: block;
+  width: 30%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #f2f2f2;
+}
+
+footer .footer-seccion {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  margin-top: 50px;
+  padding-top: 7px;
+}
+
+footer .copyR {
+  color: black;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociales i {
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.copyR {
+  font-size: 10;
+  text-align: center;
+  color: black;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-navegacion {
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-evenly;
+    font-size: 14px;
+  }
+  .form {
+    width: 746px;
+    margin: 2px;
+  }
+  .dii {
+    width: 746px;
+    margin: 19px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  .hero p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .boton {
+    margin-bottom: 50px;
+  }
+  .beneficio {
+    margin-bottom: 20px;
+  }
+  .beneficio2 {
+    margin-bottom: 20px;
+  }
+  .beneficio3 {
+    margin-bottom: 20px;
+  }
+  .beneficio4 {
+    margin-bottom: 20px;
+  }
+  .contenedor-imagenes img {
+    width: 90%;
+  }
+  .copy {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .form {
+    width: 356px;
+    margin: 12px;
+  }
+  .dii {
+    width: 346px;
+    margin: 26px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
