@@ -336,7 +336,8 @@ h3 {
 
 .galeriaUno {
   width: 80%;
-  column-count: 4;
+  -moz-column-count: 4;
+       column-count: 4;
   margin: 0 auto;
 }
 
@@ -381,7 +382,8 @@ footer .copyR {
 
 @media screen and (max-width: 768px) {
   .galeriaUno {
-    column-count: 3;
+    -moz-column-count: 3;
+         column-count: 3;
   }
   .menu-navegacion {
     flex-direction: column;
@@ -437,10 +439,10 @@ footer .copyR {
     margin: 26px;
   }
   .galeriaUno {
-    column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
   }
 }
-
 @media screen and (max-width: 320px) {
   .form {
     width: 254px;
@@ -450,6 +452,4 @@ footer .copyR {
     width: 150x;
     margin: -13px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
