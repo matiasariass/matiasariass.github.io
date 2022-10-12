@@ -380,6 +380,10 @@ footer .copyR {
   margin: 20px 0;
 }
 
+.black-color {
+  color:black;
+}
+
 @media screen and (max-width: 768px) {
   .galeriaUno {
     -moz-column-count: 3;
