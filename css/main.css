@@ -441,4 +441,15 @@ footer .copyR {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .form {
+    width: 254px;
+    margin: 32px;
+  }
+  .dii {
+    width: 150x;
+    margin: -13px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
