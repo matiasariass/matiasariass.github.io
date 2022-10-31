@@ -83,6 +83,7 @@
   align-content: center;
   justify-content: center;
   gap: 40px;
+  padding-top: 2px;
 }
 .containerD .card__desc-img-body {
   display: flex;
