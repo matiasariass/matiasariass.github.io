@@ -514,6 +514,17 @@ transition: 0.5s;
     margin-bottom: 40px;
   }
 }
+
+ .fa.fa-instagram{
+    color: #A58A4C;
+  }
+  .fa.fa-twitter{
+    color: #A58A4C;
+  }
+  .fa.fa-linkedin{
+    color: #A58A4C;
+  }
+
 @media screen and (max-width: 468px) {
   .form {
     width: 356px;
