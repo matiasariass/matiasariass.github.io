@@ -239,6 +239,7 @@ h3 {
 }
 
 .contenedor {
+  padding-bottom: 0px;
   width: 90%;
   max-width: 1200px;
   margin: auto;
